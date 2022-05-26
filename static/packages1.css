@@ -1,0 +1,31 @@
+.pack {
+    border: solid;
+    border-radius: 30px;
+    border-color: #D7E5E5;
+    border-width: 4px;
+    width: 300px;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.disc {
+    width: 90%;
+}
+
+.p {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 2% ;
+    flex-wrap: wrap;
+}
+
+
+#packages h2 {
+    margin-top: 5%;
+    margin-bottom: 50px;
+}

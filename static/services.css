@@ -1,0 +1,55 @@
+
+/* .img_serv{
+    height: 25%;
+    width: 25%;
+} */
+
+#services{
+    display: flex;
+    flex-direction:column;
+    gap: 40px;
+} 
+
+
+#list {
+    opacity: 0;
+    background-color: rgb(181, 124, 235);
+    width: 200px;
+}
+
+.serv {
+    display: flex;
+    flex-direction:column;
+    gap: 20px;
+}
+
+h4 {
+    margin: 0%;
+    font-weight: normal;
+    align-self: center;
+}
+
+#serv_3 {
+    /* position: relative; */
+    width: 250px;
+}
+
+.serv div {
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+#others {
+    /* opacity: 0; */
+    display: none;
+}
+
+.s {
+    display: flex;
+    justify-content: space-between;
+    /* margin-left: 60px;
+    margin-right: 60px; */
+    margin-left: 5%;
+    margin-right: 5%;
+}

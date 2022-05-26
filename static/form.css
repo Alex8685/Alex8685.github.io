@@ -1,0 +1,38 @@
+#form {
+    margin-top: 50px;
+    display: flex;
+    flex-direction:column;
+    gap: 20px;
+}
+
+.field {
+    width: 500px;
+    height: 30px;
+    font-size: medium;
+    margin-top: 10px;
+}
+
+#clearButton {
+    width: 505px;
+    height: 30px;
+    font-size: medium;
+    margin-top: 10px;
+    background-color: #D7E5E5;
+    border-width: 0.1px;
+    border-radius: 3px;
+    font-family: 'Comfortaa';
+}
+
+.form {
+    margin-left: 15%;
+}
+
+h6 {
+    color:rgb(150, 0, 0);
+    margin: 0%;
+}
+
+#phrase {
+    display: none;
+    margin-top: 10px;
+}

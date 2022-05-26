@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getaway Holidays</title>
+    <link href="static/style.css" rel="stylesheet">
+    <link href="static/about.css" rel="stylesheet">
+    <link href="static/services.css" rel="stylesheet">
+    <link href="static/packages1.css" rel="stylesheet">
+    <link href="static/form.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="header">
+        <div class="logo">
+            <img src="img/logo.svg" alt="" width="45px" height="45px">
+            <h3>Getaway Holidays</h3>
+        </div>
+        <div class="links">
+            <h3 onclick="scrollAbout()">О нас</h3>
+            <h3 onclick="scrollServices()">Услуги</h3>
+            <h3 onclick="scrollPackages()">Пакеты</h3>
+            <h3 onclick="scrollForm()">Оставьте заявку</h3>
+        </div>
+    </div>
+    
+    <div id="block">
+        <img src="img/block_3.jpg" alt="" width="100%" height="350px">
+        <h1 class="block_text">Getaway Holidays</h1>
+    </div>
+    <div id="about">
+        <!-- <div id="blue" class="about"></div> -->
+        <div id="text" class="about">
+            <h2>О компании</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate enim viverra ac, nunc quam vulputate fames massa. Rhoncus, luctus tortor tincidunt aliquam. Adipiscing semper habitasse sed cursus ornare. Non mattis etiam sollicitudin massa leo aenean semper dictum.</p>
+        </div>
+    </div>
+    <div id='services'>
+        <h2>Предоставляемые услуги</h2>
+        <div class="s">
+            <div class="serv" id=serv_0>
+                <div id="img_0"></div>
+                <h4>Уроки катания на лыжах/сноуборде</h4>
+            </div>
+            <div class="serv" id=serv_1>
+                <h4>Прокат оборудования</h4>
+                <div id="img_1"></div>
+            </div>
+            <div class="serv" id=serv_2>
+                <div id="img_2"></div>
+                <h4>Обслуживание лыж/сноубордов</h4>
+            </div>
+            <div class="serv" id=serv_3 onclick="blockAppear()">
+                <h4>Другие виды деятельности</h4>
+                <div id="img_3"></div>
+            </div>
+        </div>
+        <div id="others" class="s">
+            <div class="serv" id=oth_1>
+                <div id="img_4"></div>
+                <h4>Катание на бобслейных санках</h4>
+            </div>
+            <div class="serv" id=oth_2>
+                <h4>Катание на коньках</h4>
+                <div id="img_5"></div>
+            </div>
+            <div class="serv" id=oth_3>
+                <div id="img_6"></div>
+                <h4>Катание на горных велосипедах по снегу</h4>
+            </div>
+            <div class="serv" id=oth_4>
+                <h4>Спа-процедуры</h4>
+                <div id="img_7"></div>
+            </div>
+        </div>
+    </div>
+    <div id="packages">
+        <h2>Предлагаемые пакеты</h2>
+        <div class="p">
+            <div id="p_1" class="pack" onmouseenter="enter(this.id)" onmouseleave="leave(this.id)" onclick="toForm(this.id)">
+                <h3>Базовый</h3>
+                <p class="disc">
+                    – 1 утренний перекус (горячий напиток и закуска)<br>
+                    – 1 ужин, который подается в ресторане на территории отеля<br>
+                    – 1 х 1 час санаторно-курортных процедур<br>
+                    – бесплатный пропуск на подъемник на 1 день<br>
+                </p>
+                <h3 class="price">1 200 руб</h3>
+            </div>
+            <div id="p_2" class="pack" onmouseenter="enter(this.id)" onmouseleave="leave(this.id)" onclick="toForm(this.id)">
+                <h3>Стандартный</h3>
+                <p class="disc">
+                    – 3 утренних прохладительных напитка (горячие напитки и закуски)<br>
+                    – 3 ужина, которые подаются в ресторане на территории отеля<br>
+                    – 3 спа-процедуры по 1 часу<br>
+                    – бесплатный пропуск на подъемник на 3 дня<br>
+                </p>
+                <h3 class="price">1 200 руб</h3>
+            </div>
+        </div>
+        <div class="p">
+            <div id="p_3" class="pack" onmouseenter="enter(this.id)" onmouseleave="leave(this.id)" onclick="toForm(this.id)">
+                <h3>Люкс</h3>
+                <p class="disc">
+                    – ежедневные утренние закуски (горячие напитки и закуски)<br>
+                    – 5 ужинов, которые подаются в ресторане на территории отеля<br>
+                    – 5 спа-процедур по 1 часу<br>
+                    – бесплатный абонемент на подъемник на 1 неделю<br>
+                </p>
+                <h3 class="price">1 200 руб</h3>
+            </div>
+            <div id="p_4" class="pack" onmouseenter="enter(this.id)" onmouseleave="leave(this.id)" onclick="toForm(this.id)">
+                <h3>Индивидуальный</h3>
+                <p class="p disc">
+                    Пакеты услуг, включающие групповые занятия, занятия на апре-ски,
+                    услуги яслей. Гостям необходимо связаться с компанией, чтобы организовать
+                    любой индивидуальный пакет.
+                </p>
+                <h3 class="price">1 200 руб</h3>
+            </div>
+        </div>
+    </div>
+    <div id="form">
+        <h2>Оставьте заявку и мы вам перезвоним</h2>
+        <div class="form">
+            <h4>Пакет</h4>
+            <select name="f" id="f_1" class="field">
+                <option value="Базовый">Базовый</option>
+                <option value="Стандартный">Стандартный</option>
+                <option value="Люкс">Люкс</option>
+                <option value="Индивидуальный">Индивидуальный</option>
+            </select>
+        </div>
+        <div class="form">
+            <h4>Количество человек</h4>
+            <input type="number" id="f_2" class="field">
+        </div>
+        <div class="form">
+            <h4>Дата заезда</h4>
+            <input type="date" id="f_3" class="field">
+        </div>
+        <div class="form">
+            <h4>Имя</h4>
+            <input type="text" id="f_4" class="field">
+        </div>
+        <div class="form">
+            <h4>Номер телефона</h4>
+            <input type="tel" id="f_5" class="field">
+        </div>
+        <div class="form">
+            <h4>Email</h4>
+            <input type="email" id="f_6" class="field">
+        </div>
+        <div class="form">
+            <h4>Комментарий</h4>
+            <textarea name="comment" id="f_7" class="field"></textarea>
+        </div>
+        <div class="form" id="f_8">
+            <input type="submit" value="Отправить" id="clearButton">
+            <h6 id="phrase">*Все поля должны быть заполнены</h6>
+        </div>
+    </div>
+    <!-- <div class="form">
+        <h4></h4>
+        <input type="">
+    </div> -->
+
+
+    <div id="footer">
+        <h1 class="f">Getaway Holidays</h1>
+        <h4 class="f">+7(999)-999-99-99</h4>
+    </div>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+	<script src="static/main.js"></script>
+</body>
+</html>
