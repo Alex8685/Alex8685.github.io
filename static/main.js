@@ -1,63 +1,3 @@
-// let services = [
-//     'Уроки катания на лыжах/сноуборде',
-//     'Прокат оборудования',
-//     'Обслуживание лыж/сноубордов',
-//     'Другие виды деятельности'
-
-// let others=[
-//     'Катание на бобслейных санках',
-//     'Катание на коньках',
-//     'Катание на горных велосипедах по снегу',
-//     'Спа-процедуры'
-// ]
-// for (let i=0; i<services.length;i++) {
-//     let content=``
-//     let l=``
-//     let html1=`<h4>${services[i]}</h4>`
-//     let html2=`<img src="/C:/for_lessons/btec/img/ser_${i}.jpg" alt="" class="img_serv">`
-//     console.log(i)
-//     let op1=''
-//     let op0=""
-//     if (i==3) { onclick="${l}"
-//         op1+='listAppear()'
-//         op0+='listHide()'
-//     }
-//     if (i%2==0) {
-//         content+=`<div class="serv_down" id=serv_${i}>`+html2+html1
-//     } else {
-//         content=`<div class="serv_up" id=serv_${i} onmouseenter=${op1} onmouseleave=${op0}>`+html1+html2
-//     }
-//     if (i==3) {
-//         console.log(1)
-//     }
-//     content+="</div>"
-//     // console.log(content)
-//     document.querySelector("#services").innerHTML += content
-// }
-// let ot=``
-// for (let el of others) {
-//     ot+=`<li>${el}</li>`
-// }
-// document.querySelector("#list").innerHTML += ot
-
-
-// d = document.getElementById("serv_3").innerHTML
-// d.onclick = function() {
-//     el = document.getElementById("list").innerHTML
-//     el.style.opacity=1
-// }
-    
-// function listAppear() {
-//     l = document.getElementById("list")
-//     l.style.opacity=1
-// }
-
-// function listHide() {
-//     l = document.getElementById("list")
-//     l.style.opacity=0
-// }
-
-
 let wid = window.outerWidth
 let hei = window.outerHeight
 
@@ -68,10 +8,6 @@ for (let i=0; i<8; i++) {
     el.style.backgroundImage = `url(/C:/for_lessons/btec/img/ser_${i}_1.jpg)`
 }
 
-function scrollAbout() {
-    let el = document.getElementById('about');
-    el.scrollIntoView({behavior: "smooth"});
-}
 
 function scrollServices() {
     let el1 = document.getElementById('services');
